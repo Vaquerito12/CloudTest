@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    inset: 0;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#inicio { 
+    width: 100%;
+    height: 100vh;
+}
+
+#inicio .contenido {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./imagenes/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+#inicio .contenido header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido header nav {
+    position: relative;
+    display: flex;
+    top: 100px;
+    width: 100%;
+    height: 70px;
+    background-color: #ffff;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+    padding: 0 50px 0 50px;
+    border-radius: 15px;
+}
+
+#inicio .contenido header nav a {
+    text-decoration: none;
+    color: #6f20c4;
+    transition: 0.3s;
+    padding: 30px;
+}
+
+#inicio .contenido header nav a:hover {
+    color: #211f1f;
+    transform: scale(1.1);
+}
+
+#inicio .contenido .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+}
+
+#inicio .contenido .info h1 {
+    position: relative;
+    top: 105px;
+    font-size: 50px;
+}
+
+#inicio .contenido .info h2 {
+    position: relative;
+    top: 80px;
+    font-weight: normal;
+}
+
+#inicio .contenido .foto {
+    position: relative;
+    top: 100px;
+}
+
+#inicio .contenido .foto img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: solid 10px #fff;
+}
+
+#sobreMi {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+#sobreMi .contenido {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 100px 0 100px;
+} 
+
+#sobreMi .contenido .fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobreMi .contenido .fila .columna {
+    margin: 0 15px 0 15px;
+}
+
+#sobreMi .contenido .fila .columna h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #6f20c4;
+}
+
+#sobreMi .contenido .fila .columna p {
+    text-align: justify;
+    margin: 0 30px 0 30px;
+}
+
+#sobreMi .contenido h2 {
+    font-size: 40px;
+    color: #6f20c4;
+}
+
+#sobreMi .contenido #subtitulo {
+    font-size: 25px;
+}
+
+#sobreMi .contenido #texto {
+    width: 60%;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./imagenes/pongracz-noemi-qAOo_33VmTE-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+#habilidades .contenido {
+    font-family: 'Roboto';
+    color: #ffff;
+    width: 70%;
+}
+
+#habilidades .contenido h2 {
+    text-align: start;
+    font-size: 50px;
+}
+
+#habilidades .contenido h3 {
+    text-align: justify;
+    font-size: 20px;
+} 
+
+#sobreMi .contenido #color {
+    color: #6f20c4;
+}
+
+#resumen {
+    padding: 80px;
+}
+
+#resumen .contenido {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+#resumen .contenido h2 {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: transparent;
+    font-size: 140px;
+    font-weight: bolder;
+    background-image: url("./imagenes/igor-karimov-YuipfPtOH1k-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-clip: text;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+#resumen .contenido h3 {
+    width: 70%;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#resumen .contenido h3::first-letter {
+    font-size: 40px;
+    color: #6f20c4;
+    font-weight: bolder;
+}
+
+#contacto {
+   width: 100%;
+   height: 70vh;
+   color: #fff;
+}
+
+#contacto .contenido {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    background-image: url("./imagenes/screen-post-rVcxGBT80j8-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#contacto .contenido .info {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+#contacto .contenido .info .texto {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 80px 0 80px;
+    width: 200px;
+}
+
+#contacto .contenido .info .texto #titulo {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+#contacto .contenido .info .texto #subtitulo {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#contacto .contenido .redesSociales {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+#contacto .contenido .redesSociales a {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 80px 0 80px;
+    width: 25px;
+    height: 25px;
+    font-size: 35px;
+    text-decoration: none;
+    color: #ffff;
+    background-color: #6f20c49d;
+    padding: 40px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#contacto .contenido .redesSociales a:hover {
+    border-radius: 50%;
+    color: #6f20c4;
+    background-color: #ffff;
+}
+
+
+/*te amo
+yo tambien te amo y perdon por todo pero la vdd me ganan mis pensamientos y me pongo mal, hasta ando temblando
+lee ws sisisis 
+
+ay no quiero llorar pero estan tosos xd 
+no chille, no deberias llorar, te quiero 
+ta bien, no lloro :(( 
+    yo tambien te quiero mucho, te amo mucho 
+    Siempre quiero estar contigo
+    Amo hacer cochinadas
+    cómo?? xd
+
+    yo también sólo quiero estar contigo, sólo quiero hacer todo contigo, quiero
+    verte cumplir todas tus metas y poder estar ahí para ti
+
+    Yo tambien quiero ver eso >w<, tqm ily
+
+    yo tambipen amo hacer cochinadas
+    chi 
+    
+    jaksdj que linda eresm te amo demasiado
+    
+    teamooooooooooooooooooooooo
+    
+    yo tambien te amo y mucho, mucho uwu 
+    ya debes irte, ya es noche xc
+    sip, ya me voy :(( 
+        f
+        kasdjas :((
+    gracias por todo te amo 
+    mt
+    jsjs uwu <3
+    >3< xdxdxd
+    qué?? xd*/

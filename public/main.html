@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iniciar Sesión</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    form {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
-    }
-
-    input[type="text"],
-    input[type="password"],
-    input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    input[type="submit"] {
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-        background-color: #45a049;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum vitae</title>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <link href="./estiloCopiar.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
-
-<form action="/login" method="post">
-    <h2>Iniciar Sesión Hola Pedro</h2>
-    <label for="username">Usuariosss:</label>
-    <input type="text" id="username" name="username" required>
-    <label for="password">Contraseña:</label>
-    <input type="password" id="password" name="password" required>
-    <input type="submit" value="Iniciar Sesión">
-</form>
-
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <nav>
+                    <a href="#inicio">Inicio</a> 
+                    <a href="#sobreMi">Sobre mí</a> 
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#resumen">Resumen</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </header>
+            <div class="info">
+                <h1>Pedro Oswaldo Benitez Morales</h1>
+                <h2>Lorem ipsum</h2>
+            </div>
+            <div class="foto">
+                <img src="./imagenes/mike-meyers-ip15nC1LJ0o-unsplash.jpg"/>
+            </div>
+        </div>
+    </section>
+    <section id="sobreMi">
+        <div class="contenido">
+            <h2>Sobre mí</h2>
+            <p id="subtitulo">Detalles personales</p>
+            <p id="texto"><a id="color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a><br><a>Eveniet, recusandae harum veniam molestias praesentium corporis eaque. Blanditiis itaque inventore ipsa voluptates deleniti, ea quibusdam? Earum animi nihil quam facilis!</a></br></p>
+            <div class="fila">
+                <div class="columna">
+                    <h1>lorem ipsum dolor</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic sequi voluptatem voluptatum consequatur. Eveniet asperiores inventore totam tempora, iste aperiam ab ea, similique sunt aliquam in nulla, rerum ipsa ut!</p>
+                </div>
+                <div class="columna">
+                    <h1>lorem ipsum dolor</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic sequi voluptatem voluptatum consequatur. Eveniet asperiores inventore totam tempora, iste aperiam ab ea, similique sunt aliquam in nulla, rerum ipsa ut!</p>
+                </div>
+                <div class="columna">
+                    <h1>lorem ipsum dolor</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic sequi voluptatem voluptatum consequatur. Eveniet asperiores inventore totam tempora, iste aperiam ab ea, similique sunt aliquam in nulla, rerum ipsa ut!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="habilidades">
+        <div class="contenido">
+            <h2>Habilidades</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto provident iure sunt explicabo quod quo in, esse maiores nemo corrupti ex laborum doloribus non temporibus ab animi vel dolorum.</h3>
+        </div>
+    </section>
+    <section id="resumen">
+        <div class="contenido">
+            <h2>Resumen</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto provident iure sunt explicabo quod quo in, esse maiores nemo corrupti ex laborum doloribus non temporibus ab animi vel dolorum.</h3>
+        </div>
+    </section>
+    <section id="contacto">
+        <div class="contenido">
+            <div class="info">
+                <div class="texto">
+                    <h1 id="titulo">Teléfono <p id="subtitulo">4427071777</p> </h1>
+                </div>
+                <div class="texto">
+                    <h1 id="titulo">Correo <p id="subtitulo">pedroben83@gmail.com</p> </h1>
+                </div>
+                <div class="texto">
+                    <h1 id="titulo">Dirección <p id="subtitulo">Obrera, Sinaloa, #25</p> </h1>
+                </div>
+            </div>
+            <div class="redesSociales">
+                <a href="https://www.facebook.com/profile.php?id=100009491423950" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/pedroben83/" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
